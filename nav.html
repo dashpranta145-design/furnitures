@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background: transparent;
+  transition: 0.4s ease;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, #3498db, #9b59b6);
+}
+
+.content {
+  height: 100vh;
+  background: white;
+}
+
+.content::before {
+  content: "";
+  position: sticky;
+  top: 0;
+  height: 70px;
+  display: block;
+  background: white;
+  z-index: -1;
+}
+
+</style>
+<body>
+    <header class="navbar">Navbar</header>
+
+    <section class="hero"></section>
+    <section class="content"></section>
+
+</body>
+</html>

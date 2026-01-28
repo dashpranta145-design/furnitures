@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+       /* header section start  */
+ 
+ nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 0px 10px black;
+ }
+ span{
+    color: rgba(7, 4, 36, 0.947);
+ }
+ .logo img{
+    height: 6em;
+    width: 6em;
+ }
+ 
+ nav .link p{
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: bold;
+ }
+nav .link a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-right: 2em;
+}
+nav .link a:hover{
+    color: rgba(7, 4, 36, 0.947);
+    transition: 0.5s ease;
+}
+nav .icon i{
+   font-size: 1.4em;
+   margin-left: 0.8em;
+}
+
+  /* background start  */
+
+  .background{
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    font-size: 1.7em;
+    
+  }
+   .background video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+   }
+.background h4{
+      /* color: rgba(2, 2, 55, 0.96); */
+      color: #fff;
+      /* text-align: start; */
+      text-align: center;
+      /* font-size: 2em; */
+      margin-top: -9em;
+      font-size: 1.7em;
+      background: rgba(0, 0, 0, 0.4);
+      text-shadow: 0px 0px 10px rgb(12, 12, 148);
+}
+
+       /* about section start  */
+h2{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
+    scroll-margin-top: 100px;
+}  
+.border{
+    border: 1px solid rgb(20, 7, 47);
+    margin: 1em 37em;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em 1em;
+    width: 90%;
+    height: 70%;
+}
+.about .box{
+    display: flex;
+    gap: 1em;
+    height: 100%;
+   width: 100%;
+}
+.about .box .box1{
+   height: 100%;
+   width: 100%;
+}
+.about .box3{
+   height: 100%;
+   width: 98%;
+    overflow: auto;
+}
+.about .box3::-webkit-scrollbar{
+    display: none;
+}
+.about .box .box1 video{
+    height: 100%;
+    width: 100%;
+    margin-top: -1em;
+}
+.about .box .box2{
+   height: 100%;
+   width: 100%;
+   
+}
+.about .box .box2 video{
+     height: 100%;
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+.about .box3 h3{
+    font-weight: bold;
+    color: rgba(2, 2, 55, 0.96);
+    font-size: 1.5em;
+}
+.about .box3 h4{
+    font-size: 1.3em;
+    text-align: start;
+}
+.about .box3 p{
+    font-size: 1.1em;
+}
+
+ /*-------- product section start  --------*/
+
+
+.products{
+    height: 44em;
+    color: black;
+    margin-top: 2em;
+}
+ .sub-box{
+    height: 23em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2.5em;
+    margin-bottom: 1em;
+ }
+ .sub-box .box{
+     height: 20em;
+     width: 18em;
+     border-radius: 1em;
+     box-shadow: 0px 0px 10px rgb(202, 191, 191);
+     transform: translateY(0);
+     transition: 1s ease;
+ }
+ .sub-box .box img{
+    height: 10em;
+    width: 17em;
+    padding-top: 1em;
+    /* transform: scale(1); */
+    
+ }
+ .sub-box .box:hover{
+   transform: translateY(60px);
+ }
+ .sub-box .box h5{
+    margin-top: 1.3em;
+    font-size: 1.2em;
+ }
+ .sub-box .box h6{
+    font-size: 0.9em;
+ }
+ 
+ .sub-box .box2{
+     height: 20em;
+     width: 18em;
+     box-shadow: 0px 0px 10px rgb(202, 191, 191);
+     transform: translateY(0);
+     border-radius: 1em;
+     transition: 1s ease;
+ }
+  .sub-box .box2:hover{
+    transform: translateY(40px);
+  }
+ .sub-box .box2 img{
+    height: 10em;
+    width: 17em;
+    object-fit: cover;
+    padding-top: 1em;
+ }
+
+ .sub-box .box2 h5{
+    margin-top: 1.3em;
+    font-size: 1.2em;
+ }
+ .sub-box .box2 h6{
+    font-size: 0.9em;
+ }
+ button{
+    background-color: red;
+    color: white;
+    padding: 0.5em 2em;border-radius: 1em;
+    font-size: 1em;
+    margin-top: 0.5em;
+    border: none;
+    transform: scale(1);
+     transition: 1s ease;
+ }
+ button:hover{
+    transform: scale(1.1);
+ }
+
+
+
+  /*------------- contact section start----------  */
+
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    height: 38em;
+    background-color: rgb(249, 248, 248);
+}
+.contact .main-box{
+    /* display: flex; */
+    display: grid;
+    height: 30em;
+    width: 30em;
+    justify-content: center;
+}
+.contact .main-box .box1{
+    color: black;
+    border: 1px solid rgb(225, 225, 231);
+    height: 4em;
+    background-color: #fff;
+    width: 12em;
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 1em;
+}
+.contact .main-box .box1 img{
+    height: 1em;
+    width: 1em;
+    object-fit: cover;
+    margin: 0.4em 5em;
+}
+.contact .main-box .box1 p{
+    font-size: 0.5em;
+}
+.map-container {
+  width: 90%;
+  max-width: 600px;
+  height: 480px;
+  margin-top: 1.3em;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: black;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+   /*------- customer review section start------- */
+
+.review{
+    background-color: white;
+    height: 26em;
+    margin-bottom: 2em;
+
+}
+.review p{
+    text-align: center;
+    color: rgba(7, 4, 36, 0.947);
+    font-size: 1.4em;
+    padding-top: 2em;
+    font-weight: 550;
+}
+.review h4{
+    font-size: 1.7em;
+    color: black;
+    text-align: center;
+    margin-top: 1%;
+}
+ .main{
+    position: relative;
+    height: 30em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.sub{
+    height: 17em;
+    width: 17em;
+}
+.review .main .sub .box1{
+    height: 7em;
+    width: 7em;
+    border-radius: 1em;
+    background-color: #c3b7b731;
+    box-shadow: 0px 0px 6px black;
+
+}
+.review .main .sub .box1 p{
+    font-size: 0.5em;
+    margin-top: -1em;
+}
+.review .main .sub .box2{
+    height: 8em;
+    width: 8em;
+    margin-top: -4em;
+    margin-left: 8em;
+     border-radius: 50%;
+     border: 1px solid black;
+} 
+.review .main .sub .box2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+}  
+
+
+     /*----- Footer Section  start -------- */
+
+footer{
+    height: 20em;
+    background-color: #eee9e9c3;
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    margin-top: 2em;
+    color: #000;
+    box-shadow: 0px 0px 6px black;
+
+}
+.box1{
+   color: #000;
+   font-size: 1.5em;
+   height: 10em;
+   width: 11em;
+   margin-left: 2em;
+   margin-top: 2em;
+
+}
+footer .box1 .logo{
+    margin-left: 1.3em;
+}
+footer .box1  h5{
+     margin-left: 1.3em;
+     margin-top: -2em;
+    /* text-align: center; */
+}
+ footer .box1 p{
+    font-size: 0.5em;
+    color: #000;
+}
+.box2{
+    margin-top: 2em;
+}
+.box2 a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 1em;
+}
+.box2 a:hover{
+    text-decoration: underline;
+    color: rgb(70, 9, 237);
+}
+footer h3{
+  font-size: 1.3em; 
+  color: #000;
+  margin-top: 2em;
+}
+.box3{
+  margin-top: 2em;
+  text-align: center;
+  width: 15em;
+}
+
+.box3 img{
+    height: 1.5em;
+    width: 1.8em;
+    margin-top: 0.4em;
+    margin-left: 1em;
+}
+.box3 h3{
+    margin-bottom: 1em;
+}
+.box3 p{
+    font-size: 0.8em;
+}
+.call{
+     /* gap: 2em; */
+     height: 2.3em;
+     margin-top: 0.7em;
+     border-radius: 0.5em;
+     color: #000;
+}
+
+
+footer .box4{
+    margin-top: 2em;
+    display: grid;
+}
+.box4 i{
+  transition: 0.5s ease-in-out;
+  transform: translateX(0);
+}
+.box4 i:hover{
+    transform: translateX(20px);
+}
+
+footer .box4 a{
+    color: #000;
+    margin-top: -2em;
+}
+footer .box4 .follow{
+    display: grid;
+    margin-top: -3.5em;
+    margin-left: 1em;
+}
+footer .box4 a i{
+     font-size: 1.7em;
+     text-align: center;
+}
+
+
+
+
+
+/* @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  .link a {
+    display: block;
+    margin: 0.5em 0;
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .products .sub-box {
+    flex-wrap: wrap;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+} */
+
+
+
+
+
+
+
